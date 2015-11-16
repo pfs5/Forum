@@ -1,0 +1,415 @@
+@CHARSET "UTF-8";
+
+/*
+ *  					### Page layout ###
+ *  
+ *  	---------------------- header ----------------------
+ *  	*title*									*login*
+ *  
+ *  	---------------------- options   ----------------------
+ *  	*path*									*userOptions*
+ *  
+ *  	---------------------- latest ----------------------
+ *  	*latestThread							*latestThreadInfo*
+ *  
+ *  	---------------------- special ----------------------
+ *  							*row*
+ * 		*content*								*edge*
+ * 
+ */
+
+/* ###### COLOR THEME ###### */
+#title { background-color: #6778a2; }
+#path { background-color: #7a7976;  }
+#categoryExtra { background-color: #423f43;  }
+#category { background-color: #c1d29f;  }
+#edge { background-color: #D5DBE1;  }
+	
+/* original */
+/*
+#title { background-color: #376392; }
+#path { background-color: #606060;  }
+#categoryExtra { background-color: #606060;  }
+#category { background-color: #A0A8B1;  }
+#edge { background-color: #D5DBE1;  }
+*/
+
+/* ###### GLOBALS ###### */
+html * {
+	font-family: sans-serif !important;
+}
+
+table {
+	width: 95%;
+	margin-left: 30px;
+	border-spacing: 5px;
+	background-color: #EEEEEE;
+	padding-right: 30px;
+	padding-left: 30px;
+}
+
+tr, td {
+	background-color: #FFFFFF;
+}
+
+.left {
+	width: 70%;
+}
+
+.right {
+	width: 30%;
+}
+
+/* profile */
+img {
+	max-height: 100px;
+}
+
+
+/* ###### TABLES LAYOUT ###### */
+
+/* header table */
+#headerTable {
+	padding-top: 20px;
+}
+#title {
+	color: white;
+	font-family: sans-serif;
+	font-size: 50px;
+	text-align: center;
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+#login {
+	border: 1px solid #606060;
+	text-align: center;
+	padding-top: 25px;
+	font-size: 12;
+}
+
+/* options table */
+#optionsTable {
+	
+}
+
+#path {
+	padding-left: 30px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	color: #ADADAD;
+	font-size: 12px;
+}
+
+#pathLink:link {
+	color: #FFFFFF;
+	text-decoration: none
+}
+
+#pathLink:visited {
+	color: #FFFFFF;
+	text-decoration: none
+}
+
+#pathLink:hover {
+	color: grey;
+	text-decoration: none
+}
+
+#userOptions {
+	border: 1px solid #606060;
+	font-size: 10px;
+	text-align: center;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+#userOptionsText {
+	font-size: 10px;
+}
+
+#userOptionsText:link {
+	color: #376392;
+	text-decoration: none
+}
+
+#userOptionsText:visited {
+	color: #376392;
+	text-decoration: none
+}
+
+#userOptionsText:hover {
+	color: grey;
+	text-decoration: none
+}
+
+/* latest table */
+#latestTable {
+	
+}
+
+/*content table*/
+#contentTable {
+	
+}
+
+#category {
+	padding-left: 30px;
+	color: #4C4C4C;
+	font-size: 15px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+#categoryExtra {
+	height: 10px;
+}
+
+#content {
+	padding-right: 30px;
+	padding-left: 30px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	font-size: 12px;
+}
+
+#threadTitle {
+	font-size: 25px;
+	padding-bottom: 5px;
+}
+
+#threadTitle:link {
+	color: #000000;
+	text-decoration: none
+}
+
+#threadTitle:visited {
+	color: #000000;
+	text-decoration: none
+}
+
+#threadTitle:hover {
+	color: grey;
+	text-decoration: none
+}
+
+#threadDescription {
+	font-size: 15px;
+	padding-left: 15px;
+	color: grey;
+}
+
+#edge {
+	padding-left: 10px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-right: 10px;
+	color: grey;
+}
+
+/* ###### POSTS ###### */
+#postText {
+	font-size: 12px;
+	padding-left: 30px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-right: 100px;
+}
+
+#newPostText {
+	font-size: 12px;
+}
+
+#postAuthor:link {
+	color: grey;
+	text-decoration: none
+}
+
+#postAuthor:visited {
+	color: grey;
+	text-decoration: none
+}
+
+#postAuthor:hover {
+	color: black;
+	text-decoration: none
+}
+
+#authorRank {
+	font-size: 12px;
+}
+
+#postPopularity {
+	font-size: 10px;
+}
+
+#postCreationTime {
+	font-size: 10px;
+}
+
+/* Voting */
+#upvote {
+	font-size: 10px;
+}
+
+#upvote:link {
+	color: green;
+	text-decoration: none
+}
+
+#upvote:visited {
+	color: green;
+	text-decoration: none
+}
+
+#upvote:hover {
+	color: grey;
+	text-decoration: none
+}
+
+#downvote {
+	font-size: 10px;
+}
+
+#downvote:link {
+	color: red;
+	text-decoration: none
+}
+
+#downvote:visited {
+	color: red;
+	text-decoration: none
+}
+
+#downvote:hover {
+	color: grey;
+	text-decoration: none
+}
+
+#delete {
+	font-size: 10px;
+}
+
+#delete:link {
+	color: #606060;
+	text-decoration: none
+}
+
+#delete:visited {
+	color: #606060;
+	text-decoration: none
+}
+
+#delete:hover {
+	color: grey;
+	text-decoration: none
+}
+
+#create {
+	font-size: 10px;
+}
+
+#create:link {
+	color: #606060;
+	text-decoration: none
+}
+
+#create:visited {
+	color: #606060;
+	text-decoration: none
+}
+
+#create:hover {
+	color: grey;
+	text-decoration: none
+}
+
+#createCategory {
+	font-size: 10px;
+}
+
+#createCategory:link {
+	color: white;
+	text-decoration: none
+}
+
+#createCategory:visited {
+	color: white;
+	text-decoration: none
+}
+
+#createCategory:hover {
+	color: grey;
+	text-decoration: none
+}
+
+#sort {
+	font-size: 10px;
+}
+
+#sort:link {
+	color: white;
+	text-decoration: none
+}
+
+#sort:visited {
+	color: white;
+	text-decoration: none
+}
+
+#sort:hover {
+	color: grey;
+	text-decoration: none
+}
+
+/* Registration */
+#register {
+	font-size: 12px;
+}
+
+#new {
+	font-size: 12px;'
+}
+
+/* Admin */
+#user {
+	font-size: 13px;
+}
+
+#user:link {
+	color: black;
+	text-decoration: none
+}
+
+#user:visited {
+	color: black;
+	text-decoration: none
+}
+
+#user:hover {
+	color: grey;
+	text-decoration: none
+}
+	
+#adminOption {
+	font-size: 10px;
+}
+
+#adminOption:link {
+	color: #376392;
+	text-decoration: none
+}
+
+#adminOption:visited {
+	color: #376392;
+	text-decoration: none
+}
+
+#adminOption:hover {
+	color: grey;
+	text-decoration: none
+}
+
+#access {
+	font-size: 10px;
+}
